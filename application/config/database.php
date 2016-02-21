@@ -48,10 +48,10 @@
 $active_group = 'default';
 $active_record = TRUE;
 
-$db['default']['hostname'] = 'localhost';
-$db['default']['username'] = '';
-$db['default']['password'] = '';
-$db['default']['database'] = '';
+$db['default']['hostname'] = getenv('CODEIGNITER_DB_HOSTNAME') ?: 'localhost';
+$db['default']['username'] = getenv('CODEIGNITER_DB_USERNAME') ?: 'codeigniter';
+$db['default']['password'] = getenv('CODEIGNITER_DB_PASSWORD') ?: 'codeigniter';
+$db['default']['database'] = getenv('CODEIGNITER_DB_NAME') ?: 'codeigniter_dev';
 $db['default']['dbdriver'] = 'mysql';
 $db['default']['dbprefix'] = '';
 $db['default']['pconnect'] = TRUE;
