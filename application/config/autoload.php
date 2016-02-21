@@ -111,7 +111,7 @@ $autoload['language'] = array();
 |
 */
 
-$autoload['model'] = array();
+$autoload['model'] = ['BoardMessage'];
 
 
 /* End of file autoload.php */
