@@ -1,6 +1,13 @@
+!*/cache/.htaccess
+!*/cache/index.html
+!*/logs/index.html
+!application/cache/.htaccess
+!application/cache/index.html
+!application/logs/.htaccess
+!application/logs/index.html
+*/cache/*
 */config/development
 */logs/log-*.php
-!*/logs/index.html
-*/cache/*
-!*/cache/index.html
-!*/cache/.htaccess
+.DS_Store
+application/cache/*
+application/logs/*
